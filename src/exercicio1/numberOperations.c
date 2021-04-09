@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <wchar.h>
 
-int main() {
+int main(void) {
     setlocale(LC_ALL, "Portuguese");
     int a, b;
 

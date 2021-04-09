@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <wchar.h>
 
-int main() {
+int main(void) {
     setlocale(LC_ALL, "Portuguese");
     int m, dm, cm, mm;
 

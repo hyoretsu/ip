@@ -4,7 +4,7 @@
 #include <time.h>
 #include <wchar.h>
 
-int main() {
+int main(void) {
     setlocale(LC_ALL, "Portuguese");
     int age, day, month, year;
 
@@ -29,4 +29,6 @@ int main() {
     } else {
         wprintf(L"Você é menor de idade.\n");
     }
+
+    return 0;
 }

@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <wchar.h>
 
-int main() {
+int main(void) {
     setlocale(LC_ALL, "Portuguese");
     int distance, x1, x2, y1, y2;
 
@@ -17,4 +17,6 @@ int main() {
     distance = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
 
     wprintf(L"A distância entre os pontos é de %d\n", distance);
+
+    return 0;
 }
