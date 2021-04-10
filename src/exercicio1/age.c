@@ -1,19 +1,18 @@
 // Leia o dia, o mês e o ano de nascimento do usuário e o dia, o mês e ano atuais. (automaticamente) Exiba na tela a idade do usuário e se é maior de idade.
 #include <locale.h>
-#include <stdio.h>
 #include <time.h>
 #include <wchar.h>
 
 int main(void) {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "");
     int age, day, month, year;
 
     wprintf(L"Digite seu dia de nascimento: ");
-    scanf("%d", &day);
+    wscanf(L"%d", &day);
     wprintf(L"Digite seu mês de nascimento: ");
-    scanf("%d", &month);
+    wscanf(L"%d", &month);
     wprintf(L"Digite seu ano de nascimento: ");
-    scanf("%d", &year);
+    wscanf(L"%d", &year);
 
     time_t t = time(NULL);
     struct tm userTime = *localtime(&t);

@@ -6,22 +6,21 @@
 // 5. O seno da diferença do primeiro número pelo segundo.
 #include <locale.h>
 #include <math.h>
-#include <stdio.h>
 #include <wchar.h>
 
 int main(void) {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "");
     int a, b;
 
     wprintf(L"Insira o primeiro número: ");
-    scanf("%d", &a);
+    wscanf(L"%d", &a);
     wprintf(L"Insira o segundo número: ");
-    scanf("%d", &b);
+    wscanf(L"%d", &b);
 
-    printf("Soma: %i\n", a + b);
-    printf("Produto do primeiro pelo quadrado do segundo: %i\n", a * (int)(pow(b, 2)));
-    printf("Quadrado - quadrado: %i\n", (int)(pow(a, 2) - pow(b, 2)));
-    printf("Raiz da soma dos quadrados: %.2f\n", sqrt(pow(a, 2) + pow(b, 2)));
+    wprintf(L"Soma: %i\n", a + b);
+    wprintf(L"Produto do primeiro pelo quadrado do segundo: %i\n", a * (int)(pow(b, 2)));
+    wprintf(L"Quadrado - quadrado: %i\n", (int)(pow(a, 2) - pow(b, 2)));
+    wprintf(L"Raiz da soma dos quadrados: %.2f\n", sqrt(pow(a, 2) + pow(b, 2)));
     wprintf(L"Seno da diferença: %.2f\n", sin(a - b));
 
     return 0;

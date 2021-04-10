@@ -1,15 +1,14 @@
 // Pergunta um valor em metros e imprima o correspondente em decímetros, centímetros e milímetros.
 #include <locale.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <wchar.h>
 
 int main(void) {
-    setlocale(LC_ALL, "Portuguese");
+    setlocale(LC_ALL, "");
     int m, dm, cm, mm;
 
-    printf("Insira um valor em metros: ");
-    scanf("%d", &m);
+    wprintf(L"Insira um valor em metros: ");
+    wscanf(L"%d", &m);
 
     if (m == 0) {
         wprintf(L"Não há como converter uma quantidade inexistente de metros ou o valor enviado é inválido. (caractére)\n");
@@ -23,7 +22,7 @@ int main(void) {
 
     wprintf(L"%i decímetros\n", dm);
     wprintf(L"%i centímetros\n", cm);
-    printf("%i milimetros\n", mm);
+    wprintf(L"%i milimetros\n", mm);
 
     return 0;
 }
