@@ -1,4 +1,10 @@
-# Compilação
+# Compilação e Execução
+
+### CMake
+
+Caso tenha o [CMake](https://cmake.org/download/) instalado, rode `cmake .` e em seguida `make` (Indisponível para Windows por incompatibilidade com o Visual Studio)
+
+### Manualmente
 
 Rode o comando `clang -lm [nome do arquivo].c -o [nome do arquivo].exe` ou `gcc -lm [nome do arquivo].c -o [nome do arquivo].exe`, dependendo de qual estiver instalado.
 
