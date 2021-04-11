@@ -1,5 +1,6 @@
 // Leia o dia, o mês e o ano de nascimento do usuário e o dia, o mês e ano atuais. (automaticamente) Exiba na tela a idade do usuário e se é maior de idade.
 #include <locale.h>
+#include <stdlib.h>
 #include <time.h>
 #include <wchar.h>
 
@@ -18,16 +19,12 @@ int main(void) {
     struct tm userTime = *localtime(&t);
 
     age = (userTime.tm_year + 1900) - year;
-    if (userTime.tm_mday < day && userTime.tm_mon + 1 <= month) {
+    if ((userTime.tm_mday < day) && (userTime.tm_mon + 1 <= month)) {
         age -= 1;
     }
 
     wprintf(L"Sua idade é %d anos.\n", age);
-    if (age >= 18) {
-        wprintf(L"Você é maior de idade.\n");
-    } else {
-        wprintf(L"Você é menor de idade.\n");
-    }
+    wprintf(L"Você é %s de idade.\n", (age >= 18) ? "maior" : "menor");
 
     return 0;
 }

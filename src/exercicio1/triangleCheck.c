@@ -19,7 +19,7 @@ int main(void) {
         exit(0);
     }
 
-    if (a == b == c) {
+    if (a == b && b == c) {
         wprintf(L"O triângulo é equilátero.\n");
     } else if (a == b || b == c || c == a) {
         wprintf(L"O triângulo é isósceles.\n");
