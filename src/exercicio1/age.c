@@ -19,7 +19,9 @@ int main(void) {
     struct tm userTime = *localtime(&t);
 
     age = (userTime.tm_year + 1900) - year;
-    if ((userTime.tm_mday < day) && (userTime.tm_mon + 1 <= month)) {
+
+    int currentMonth = userTime.tm_mon + 1;
+    if ((currentMonth <= month) || (currentMonth == month && userTime.tm_mday < day)) {
         age -= 1;
     }
 
