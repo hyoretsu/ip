@@ -1,0 +1,5 @@
+#include "./ageCalc.c"
+#include "./distanceCalc.c"
+#include "./numberOperations.c"
+#include "./triangleCheck.c"
+#include "./unitConversion.c"
