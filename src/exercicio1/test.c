@@ -11,6 +11,9 @@ int main(void) {
   tcase_add_test(tc_core, test_number_operations);
   tcase_add_test(tc_core, test_distance_calc);
   tcase_add_test(tc_core, test_age);
+  tcase_add_test(tc_core, test_leap_year);
+  tcase_add_test(tc_core, test_valid_day);
+  tcase_add_test(tc_core, test_valid_month);
   tcase_add_test(tc_core, test_triangle_exists);
   tcase_add_test(tc_core, test_triangle_type_check);
   suite_add_tcase(suite, tc_core);
