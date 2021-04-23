@@ -2,27 +2,20 @@
 #include <math.h>
 #include <wchar.h>
 
-// Calcule a área do polígono solicitado
-void calcArea(int option, int base, int height, int radius) {
+float calcArea(int option, int base, int height, int radius) {
     float area;
 
     if (option == 1) {
+        // circleArea = pi * r^2
         area = 3.14 * pow(radius, 2);
-
-        wprintf(L"A área do circulo de raio %d é: %.2f\n", radius, area);
     } else {
+        // rectangleArea = base * height
         area = base * height;
         // triangleArea = (base * height) / 2
         (option == 2) && (area /= 2);
-
-        wprintf(
-            L"A área do %s de base %d e altura %d é: %.0f\n",
-            (option == 2) ? "triângulo" : "retângulo",
-            base,
-            height,
-            area
-        );
     }
+
+    return area;
 }
 
 int main(void) {
@@ -50,7 +43,19 @@ int main(void) {
             break;
     }
 
-    calcArea(option, base, height, radius);
+    float area = calcArea(option, base, height, radius);
+
+    if (option == 1) {
+        wprintf(L"A área do circulo de raio %d é: %.2f\n", radius, area);
+    } else {
+        wprintf(
+            L"A área do %s de base %d e altura %d é: %.2f\n",
+            (option == 2) ? "triângulo" : "retângulo",
+            base,
+            height,
+            area
+        );
+    }
 
     return 0;
 }
