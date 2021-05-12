@@ -2,6 +2,7 @@
 #include <wchar.h>
 #include "./funcs/index.c"
 
+// Conversão de medida em metros
 void route1() {
     int m;
 
@@ -15,6 +16,7 @@ void route1() {
     wprintf(L"%i centímetros\n", values[1]);
     wprintf(L"%i milimetros\n", values[2]);
 }
+// Operações com números
 void route2() {
     int a, b;
 
@@ -32,6 +34,7 @@ void route2() {
     wprintf(L"Raiz da soma dos quadrados: %.2lf\n", results[3]);
     wprintf(L"Seno da diferença: %.2lf\n", results[4]);
 }
+// Distância entre 2 pontos
 void route3() {
     int x1, y1, x2, y2;
 
@@ -44,6 +47,7 @@ void route3() {
 
     wprintf(L"A distância entre os pontos é de %.2f\n", distance);
 }
+// Cálculo de idade
 void route4() {
     int day, month, year;
 
@@ -59,6 +63,7 @@ void route4() {
     wprintf(L"Sua idade é %d anos. ", age);
     wprintf(L"Você é %s de idade.\n", (age >= 18) ? "maior" : "menor");
 }
+// Checagem de triângulo
 void route5() {
     int a, b, c;
 
@@ -84,6 +89,7 @@ int main(void) {
     wprintf(L"3. Distância entre 2 pontos\n");
     wprintf(L"4. Cálculo de idade\n");
     wprintf(L"5. Checagem de triângulo\n");
+    wprintf(L"Opção ");
     wscanf(L"%d", &option);
 
     switch (option) {

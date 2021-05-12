@@ -6,16 +6,15 @@ int option;
 
 // Ordenamento de números
 void route1() {
-    int a, b, c;
+    int *numbersArray;
 
     wprintf(L"Digite o primeiro número: ");
-    wscanf(L"%d", &a);
+    wscanf(L"%d", &numbersArray[0]);
     wprintf(L"Digite o segundo número: ");
-    wscanf(L"%d", &b);
+    wscanf(L"%d", &numbersArray[1]);
     wprintf(L"Digite o terceiro número: ");
-    wscanf(L"%d", &c);
+    wscanf(L"%d", &numbersArray[2]);
 
-    int numbersArray[] = {a, b, c};
     sort(numbersArray, sizeof(numbersArray) / 4);
 
     wprintf(L"[%d, %d, %d]\n", numbersArray[0], numbersArray[1], numbersArray[2]);
