@@ -1,0 +1,40 @@
+IP - UFPB - 2020.2
+Prof. Carlos Eduardo Batista
+
+Exercício de arquivos em C
+
+Faça um programa em C que funcione como uma agenda telefonica. Considere as 
+seguintes estruturas:
+
+struct item_agenda {
+	int id;
+	char* nome;
+	int tamanho_nome;
+	struct telefone tel*;
+	int quant_tel;
+};
+
+struct telefone {
+	char tel_ddd[2];
+	char tel_str[10];
+};
+
+Faça o programa declarar um array de 10 instâncias de "item_agenda". O programa
+deve apresentar o seguinte menu, em loop, e realizar as ações descritas através
+de funções:
+
+	0) Carregar agenda do arquivo
+	1) Buscar item na agenda por nome
+	2) Inserir item na agenda
+	3) Remover item da agenda
+	4) Editar item da agenda 
+	5) Salvar agenda em arquivo
+	6) Sair
+
+
+O programa deve considerar que um item pode ter até no máximo 5 telefones
+(solicitar novamente se o valor inserido for maior). O programa deve 
+considerar um nome de arquivo fixo para a agenda (ex. "agenda.bin"). 
+
+
+	

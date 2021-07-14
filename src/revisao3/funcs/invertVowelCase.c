@@ -2,7 +2,7 @@
 #include <string.h>
 #include "../headers/invertVowelCase.h"
 
-int invertVowelCase(char word[47]) {
+void invertVowelCase(char word[47]) {
     int vowels = 0;
 
     for (size_t i = 0; i < strlen(word); i++) {

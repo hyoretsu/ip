@@ -1,0 +1,5 @@
+ registerProducts() {
+
+
+    return;
+}

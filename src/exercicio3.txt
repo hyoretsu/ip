@@ -1,0 +1,49 @@
+IP - UFPB - 2020.2
+Prof. Carlos Eduardo Batista
+
+Exercícios de ponteiros e funções 
+
+1) Escreva uma função que recebe uma string (array de caracteres) e uma letra
+(um caracter) e devolve um vetor de inteiros contendo as posições (índices no
+vetor da string) onde a letra foi encontrada) e um inteiro contendo o tamanho
+do vetor criado (total de letras iguais encontradas). 
+
+
+2) Faça um programa em que tenha uma função que receba dois valores inteiros
+m e n; use esses valores para criar um array de n strings com m caracteres
+aleatórios - o array resultante deverá ser o valor de retorno da função.
+
+3) Faça um programa em C em que você defina:
+	- Uma palavra como um array de caracteres (char *palavra);
+	- Uma frase como um array de palavras (char **frase);
+	- Um capitulo como um array de frases (char ***capitulo);
+	- Um livro como um array de capitulos (char ****livro);
+
+Usando as definições acima, crie funções que exibam:
+	a) Palavras em uma frase, para uma frase recebida;
+	b) Frases em um capítulo, para um capítulo recebido;
+	c) Capítulos em um livro, para um livro recebido. 
+
+Faça um programa que crie dois livros, com 5 capítulos cada, onde os capítulos
+tem 5 frases de 5 palavras e teste as funções criadas.
+
+
+4) Considere a seguinte struct:
+
+	struct lista_item {
+		int id;
+		float value;
+		struct lista* next;
+	};
+
+Faça um programa em C que crie uma cadeia de 10 elementos dessa estrutura, 
+ligados a partir do ponteiro next (uma lista encadeada com 10 elementos). 
+Faça as seguintes funções e as execute sobre a lista:
+
+	a) Função que exiba todos os elementos da lista;
+	b) Função que retorne o item com maior valor (campo float value);
+	c) Função que insira um elemento no fim da lista;
+	d) Função que remova um elemento do fim da lista;
+	e) Função que insira um elemento depois do n-ésimo elemento (recebendo n como parâmetro);
+	f) Função que remova o n-ésimo elemento (recebendo n como parâmetro);
+

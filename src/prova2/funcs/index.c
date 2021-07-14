@@ -2,4 +2,4 @@
 #include "./halfLife.c"
 #include "./invertVowelCase.c"
 #include "./multiplicationTable.c"
-// #include "./wordSort.c"
+#include "./wordSort.c"

@@ -1,0 +1,23 @@
+UNIVERSIDADE FEDERAL DA PARAÍBA – CENTRO DE INFORMÁTICA
+
+Introdução à Programação - 2020.2
+
+Prof. Carlos Eduardo Batista
+
+Pontuação: 3,0 pontos
+
+Entrega por e-mail (bidu @ ci ufpb br).
+
+Horário limite: 07h59 de 13/07/2021.
+
+O   título   do   e-mail   deve   conter:   “[IP-20202-E003]   NOME   DO  ALUNO   –   MATRICULA”. Arquivo de entrega deve anexar todos os códigos fonte em C dentro de um diretório nomeado “MATRICULA_ALUNO-IP-20202-E003” o  qual   deve   ser   comprimido   em   um   arquivo   ZIP (“MATRICULA_ALUNO-IP-20202-E003”). O arquivo ZIP deve conter obrigatoriamente um arquivo   de   texto   chamado   README.txt contemplando   todas   as   instruções   de   compilação e execução, além de qualquer observação que se fizer necessária para correção.
+
+1 - 2pts) Escrever um programa em C que contenha uma estrutura que sirva para o cadastro de produtos em uma loja. Esta estrutura armazena o codigo do produto (int), o preço (float) e a descrição do produto (char *); declare um array para armazenar 10 itens da estrutura definida. Faça o programa exibir um menu com as seguintes opções (e as realize através do uso de funções):
+
+
+
+
+
+
+
+2 - 1pt) Crie uma função que receba uma string como parâmetro (de tamanho desconhecido) e retorne uma cópia da mesma com o conteúdo duplicado. Ex. se invocada com uma string de conteúdo "ABC" a função deverá retornar a string "ABCABC". A assinatura da função deve ser: char *strdoublecopy(char *str);

@@ -45,13 +45,20 @@ void reverse(char words[3][47], int maxIndex) {
 }
 
 void wordSort(char words[3][47], char option[2]) {
+    if (strcmp(option, "a") == 0) {
+        sortAlphabetic(words, 3);
+        return;
+    }
     switch (*option) {
-        case 'a':
-            sortAlphabetic(words, 3);
-            return;
+        // Ordem alfabética
+        // case 'a':
+        //     sortAlphabetic(words, 3);
+        //     return;
+        // Ordem crescente de quantidade de caracteres
         case 'b':
             sortSize(words, 3);
             return;
+        // Inversão de caractéres
         case 'c':
             reverse(words, 3);
             return;

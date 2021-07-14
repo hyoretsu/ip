@@ -65,36 +65,35 @@ void route4() {
     wprintf(L"Digite uma palavra: ");
     wscanf(L"%s", word);
 
-    invertVowelCase(word);
+    int vowels = invertVowelCase(word);
 
     wprintf(L"%s\n", word);
+    wprintf(L"Um total de %d vogais foram alteradas", vowels);
 
     return;
 }
 // Ordenação de palavras
 void route5() {
-    // char words[3][47], option[2];
+    char words[3][47], option[2];
 
-    // wprintf(L"Digite a primeira palavra: ");
-    // wscanf(L"%s", words[0]);
-    // wprintf(L"Digite a segunda palavra: ");
-    // wscanf(L"%s", words[1]);
-    // wprintf(L"Digite a terceira palavra: ");
-    // wscanf(L"%s", words[2]);
+    wprintf(L"Digite a primeira palavra: ");
+    wscanf(L"%s", words[0]);
+    wprintf(L"Digite a segunda palavra: ");
+    wscanf(L"%s", words[1]);
+    wprintf(L"Digite a terceira palavra: ");
+    wscanf(L"%s", words[2]);
 
-    // wprintf(L"Como você deseja ordenar as palavras?\n");
-    // wprintf(L"a) em ordem alfabética\n");
-	// wprintf(L"b) em ordem crescente de quantidade de caracteres\n");
-	// wprintf(L"c) com seus caracteres em ordem reversa\n");
-    // wscanf(L"%s", option);
+    wprintf(L"Como você deseja ordenar as palavras?\n");
+    wprintf(L"a) em ordem alfabética\n");
+	wprintf(L"b) em ordem crescente de quantidade de caracteres\n");
+	wprintf(L"c) com seus caracteres em ordem reversa\n");
+    wscanf(L"%s", option);
 
-    // wordSort(words, option);
+    wordSort(words, option);
 
-    // for (int i = 0; i < 3; i++) {
-    //     wprintf(L"%s\n", words[i]);
-    // }
-
-    wprintf(L"É né, ngc complexo ;-;\n");
+    for (int i = 0; i < 3; i++) {
+        wprintf(L"%s\n", words[i]);
+    }
 
     return;
 }
@@ -152,7 +151,7 @@ int main(void) {
     wprintf(L"2. Progressão Geométrica\n");
     wprintf(L"3. Tabuada\n");
     wprintf(L"4. Inversão de maiúscula/minúscula das vogais de uma palavra\n");
-    wprintf(L"5. \n");
+    wprintf(L"5. Ordenação de palavras\n");
     wprintf(L"6. Estatísticas sobre médias de alunos\n");
     wprintf(L"Opção ");
     wscanf(L"%d", &option);

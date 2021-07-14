@@ -1,0 +1,17 @@
+IP - UFPB - 2020.2
+Prof. Carlos Eduardo Batista
+
+Exercícios de ponteiros
+
+1) Escreva um programa em C que declare um inteiro, um real e um char, e ponteiros para inteiro, real, e char. Associe as variaveis aos ponteiros (use &). Modifique os valores de cada variavel usando os ponteiros. Imprima os valores das variáveis antes e após a modificacao.
+
+2) Crie um programa em C que contenha um array de floats com 10 elementos. Exiba na tela endereço de cada posição desse array.
+
+3) Faça um programa em C que leia 2 valores inteiros e chame uma função que receba estas 2 variaveis e troque o seu conteúdo, ou seja, esta função é chamada passando duas variaveis, A e B por exemplo, e após a execução da função, A conterá o valor de B e B terá o valor de A.
+
+4) Crie uma função que receba dois parâmetros: um array e um valor do mesmo tipo do array. A função deverá preencher os elementos de array com esse valor. Não utilize índices para percorrer o array, apenas aritmetica de ponteiros.
+
+5) Escreva uma função que dado um numero real passado como parametro, retorne a parte inteira e a parte fracionaria deste numero em variáveis passadas como parâmetro (o endereço delas). Escreva um programa em C que chama esta função.
+Prototipo: 
+void frac(float num, int* inteiro, float* frac);
+

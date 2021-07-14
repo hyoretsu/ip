@@ -1,0 +1,72 @@
+IP - UFPB - 2020.2
+Prof. Carlos Eduardo Batista
+
+Exercícios de ponteiros e funções
+
+1) Escreva um programa em C que receba um valor n (int) de entrada e, em seguida:
+- Aloque espaço dinamicamente memoria para criar um vetor de caracteres
+(char) de n elementos e verifique se o espaço foi alocado com sucesso;
+- preencha o vetor criado com n caracteres digitados pelo usuario;
+- exiba o vetor preenchido na tela
+- libere o espaço de memoria alocado
+
+2) Escreva um programa em C que contenha uma função que recebe como parâmetros
+um vetor de inteiros v, o número de elementos dele (int) e ponteiros para
+variáveis inteiras nos quais devem ser retornados os valores maximo e minimo do
+vetor. A assinatura da função pode ser:
+
+void maximoMinimo(int *v, int N, int *maximo, int *minimo);
+
+3) Escreva um programa em C que contenha uma função que receba um array de
+inteiros como argumento e o tamanho (int) do array. Faça esta função alterar
+todos os valores negativos contidos no array pelo valor equivalente positivo.
+A função deverá retornar a quantidade (int) de valores modificados e pode ter
+a assinatura abaixo:
+
+int desnegativa(int vetor[], int tamanho);
+
+Faça o programa em C para:
+- receber um valor n (int) do usuário
+- alocar dinamicamente o array
+- solicitar n valores inteiros ao usuário para armazenar no array
+- invocar a função implementada (desnegativa) para modificar o array
+- exibir o array modificado e a quantidade de itens modificados
+- liberar o espaço de memória alocado para o array
+
+4) Considere o tipo de dado tPessoa definido abaixo:
+typedef struct {
+	int dia, mes, ano;
+} tData;
+
+typedef struct {
+	int matricula;
+	tData dataNascimento;
+	float altura;
+} tPessoa;
+
+Escreva um programa em C que receba um valor n (int) de entrada e, em seguida:
+- aloque espaço dinamicamente na memoria para criar um vetor de tPessoa de n
+elementos e verifique se o espaço foi alocado com sucesso
+- preencha o vetor criado com n valores digitados pelo usuario
+- exiba o vetor preenchido na tela e a média de alturas dos itens tPessoa
+- libere o espaço de memoria alocado
+
+
+5) Considere o tipo de dado tRetangulo definido abaixo:
+typedef struct {
+	float base;
+	float altura;
+} tRetangulo;
+
+Faça um programa em C que contenha uma função que receba como argumento uma
+variável do tipo tRetangulo e retorne, através de dois ponteiros para float
+passados como argumento, a área e o perímetro de um retângulo considerando
+os valores contidos na estrutura. A assinatura da funcao pode ser:
+
+void calculaRetangulo(tRetangulo r, float *area, float *perimetro);
+
+6) Faça um programa em C que receba n strings como argumento de execução. O
+programa deverá conter uma função que altere as vogais das strings de
+maiusculas para minusculas e vice-versa, e o programa deverá invocar esta
+função sobre as strings recebidas e exibir o resultado na tela.
+

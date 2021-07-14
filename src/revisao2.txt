@@ -1,0 +1,49 @@
+Exercícios de revisão - Segunda prova - IP 2020.2 - UFPB
+
+1) Faça um programa em C que efetue a soma de todos os números ímpares que são
+múltiplos de três e que se encontram no conjunto dos números de 1 até 5000.
+
+2) A sequência de Fibonacci tem papel importante na explicação de fenômenos 
+naturais e é muito usada como guia estética na arquitetura, nas artes visuais,
+ na música etc.
+A sequência inicia-se por dois números 1, e partir do terceiro elemento usa-se
+a expressão: elemento[n] = elemento[n-1] + elemento[n-2]. 
+
+Exemplo de sequência: 1, 1, 2, 3, 5, 8. 
+
+Construa um programa em C que imprima na tela os n primeiros elementos da
+sequência de Fibonacci, onde n é informado pelo usuário.
+
+3) Faça um programa que leia tantos números quanto o usuário desejar, até que 
+este digite um valor negativo. Exiba, então: a média dos números, a quantidade
+de números pares, a quantidade de números ímpares, qual o menor número par e
+qual o maior número ímpar. 
+
+4) Faça um programa em Cque peça um número inteiro inicial ao usuário, um valor
+inteiro de razão e calcule os 10 primeiros termos de uma P.A (Progressão 
+Aritmética), armazenando esses valores em um vetor de tamanho 10.
+
+5) Faça um programa em C que funcione como um jogo da velha, usando uma matrizes
+de caracteres (char) 3x3. Em loop o programa pedirá ao usuário o número da linha
+(1 até 3) e o da coluna (1 até 3). 
+A cada vez que o usuário entrar com esses dados, colocar um 'X' ou 'O' no índice
+adequado da matriz e exibir seu conteúdo na tela.
+
+6) Faça um programa em C que leia três strings e as exiba em ordem alfabética.
+
+7) Faça um programa em C que leia uma string e depois leia um valor inteiro
+entre 0 e 50 (faça um laço de repetição que garante esse valor). O valor 
+inteiro será utilizado como "senha" para "codificar" a string inserida, em uma
+implementação rudimentar da chamada "shift cypher" (cifra de deslocamento).
+Some o valor inteiro aos caracteres alfabéticos da String inserida e depois 
+exiba a string. Depois, solicite um outro valor inteiro entre 0 e 50 (também 
+com laço de repetição) e use o novo valor inteiro para "decodificar" a string, 
+decrementando o valor inteiro de cada caractere.
+
+Exemplo: 
+
+String digitada: "Ola mundo"
+Inteiro digitado: 3
+String codificada: "Rod pzqgr"
+
+
