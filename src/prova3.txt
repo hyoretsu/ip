@@ -1,0 +1,59 @@
+Terceira Prova – Introdução a Programação – UFPB – 2020.2
+Professor: Carlos Eduardo Batista
+
+***** ATENÇÃO!!!!!! LEIA TODAS AS INSTRUÇÕES!!!!!! ***********
+
+- As respostas da prova devem ser enviadas por e-mail (para bidu @ ci.ufpb.br)
+ em um ÚNICO arquivo ZIP contendo os códigos solicitados.
+
+- Cada questão deve ser realizada em um ARQUIVO SEPARADO.
+
+- O título do e-mail E do arquivo ZIP DEVE conter "PROVA03-IP-202",
+ ALÉM do seu nome E matrícula. <--------- ATENÇÃO!!!!!!
+
+- TODO CÓDIGO *DEVE* ser comentado com a explicação da lógica e demais
+ informações solicitadas na questão. <--------- ATENÇÃO!!!!!!
+
+- Enviar junto das questões uma imagem (PRINT) da execução final do código.
+
+- PLÁGIO será punido com a PERDA DA PONTUAÇÃO das respostas por todos os
+ participantes. <--------- ATENÇÃO!!!!!!
+
+- O envio deverá ser feito até as 16h do dia 13/07/2021
+
+***** ATENÇÃO!!!!!! LEIA TODAS AS INSTRUÇÕES!!!!!! ***********
+
+
+1) (2,5 pontos) Faça um programa em C que contenha uma função que receba:
+	- uma string (char*)
+	- o tamanho da string
+
+Faça esta função retornar/preencher um array de valores inteiros, onde
+cada posição representa a quantidade de vezes que cada letra do alfabeto
+aparece na string passada como argumento. Faça o programa chamar a função
+com algumas strings de exemplo dentro da função main().
+
+Ex. para a string "AaaABBcZz", teríamos os seguintes valores para o
+array (com 26 posições):
+	int contador[26];
+...
+	contador[0] = 4 //4 ocorrencias da letra A
+	contador[1] = 2 //2 ocorrencias da letra B
+	contador[2] = 1 //1 ocorrencia da letra C
+... (todas as posições intermediárias com o valor 0 (zero).
+	contador[25] = 2 //2 ocorrencias da letra Z
+
+3) Implemente três
+funções que realizem a busca de livros por título, por autor e por ano. Peça
+ao usuário os dados de 5 livros e depois exiba um menu onde pode-se fazer
+cada uma das buscas implementadas em funções, além da opção de fechar o
+programa.
+
+4) (2,5 pontos) Faça um programa em C que solicite ao usuário 5 strings de no
+máximo 40 caracteres. Armazene essas strings em um array.
+- Implemente e teste uma função que receba esse array de strings e um
+caractere; faça a função retornar a quantidade de vezes que esse caractere é
+encontrado em todas as strings;
+- Implemente e teste uma função que receba esse array de strings e crie um novo
+array contendo só as strings que começam com vogais; retorne o array criado.
+
